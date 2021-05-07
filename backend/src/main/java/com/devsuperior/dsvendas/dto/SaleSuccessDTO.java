@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public class SaleSuccessDTO implements Serializable {
 
-    private String sellerNome;
+    private String sellerName;
     private Long visited;
     private Long deals;
 
@@ -14,17 +14,17 @@ public class SaleSuccessDTO implements Serializable {
     }
 
     public SaleSuccessDTO(Seller seller, Long visited, Long deals) {
-        this.sellerNome = seller.getName();
+        this.sellerName = seller.getName();
         this.visited = visited;
         this.deals = deals;
     }
 
-    public String getSellerNome() {
-        return sellerNome;
+    public String getSellerName() {
+        return sellerName;
     }
 
-    public void setSellerNome(String sellerNome) {
-        this.sellerNome = sellerNome;
+    public void setSellerName(String sellerName) {
+        this.sellerName = sellerName;
     }
 
     public Long getVisited() {
